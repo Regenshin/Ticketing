@@ -15,6 +15,8 @@ font-family: "Electrolize";
     align-items: center;
     justify-content: space-around;
     
+    animation: fade-up 0.5s  ease-in-out forwards ;
+    
 
     
     
@@ -23,28 +25,35 @@ font-family: "Electrolize";
 
 .log h1{
     font-size: 60px;
-    animation: fade-up 0.5s ease-in-out forwards ;
-    
-
-}
-.log input{
-    border: none;
-    border-bottom: solid;
-    width:80% ;
-    height: 3%;
-    background-color: none;
-    animation: fade-up 0.5s ease-in-out forwards ;
     
     
 
 }
-
 ::placeholder{
     color: #1a1a1a;
     font-size: 20px;
     font-family: "Electrolize";
 
 }
+.log input{
+    border: none;
+    border-bottom: solid;
+    width:80% ;
+    height: 40px;
+    background-color: none;
+    
+    
+    
+
+}
+.credentials{
+width: 90%;   
+display: flex;
+flex-direction: column;
+align-items: center; 
+}
+
+
 .log button{
     width: 50%;
     height: 10%;
@@ -53,16 +62,14 @@ font-family: "Electrolize";
     background: linear-gradient(45deg,#28266D ,#592C6E );
     color: aliceblue;
     font-size: 30px;
-    animation: fade-up 0.5s ease-in-out forwards ;
+    
     
     
 
 }
 
 
-.log p{
-    animation: fade-up 0.5s ease-in-out forwards ;
-}
+
 
 .pic1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.318),rgba(0, 0, 0, 0.186)),url(./img/checklist.jpg);
@@ -94,10 +101,10 @@ font-family: "Electrolize";
 @keyframes fade-up{
     0%{
         opacity: 0;
-        transform: translateY(30px) ;
+        transform: translateY(30px) scale(0.8) ;
     }
     100%{
         opacity: 1;
-        transform: translateY(0px)  ;
+        transform: translateY(0px) scale(1)  ;
     }
 }
