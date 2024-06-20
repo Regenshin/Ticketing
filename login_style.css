@@ -3,6 +3,7 @@ body{
 margin: 0;
 padding: 0;
 display: flex;
+font-family: "Electrolize";
 
 }
 .log{
@@ -12,10 +13,55 @@ display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
+
     
     
 
+}
+
+.log h1{
+    font-size: 60px;
+    animation: fade-up 0.5s ease-in-out forwards ;
+    
+
+}
+.log input{
+    border: none;
+    border-bottom: solid;
+    width:80% ;
+    height: 3%;
+    background-color: none;
+    animation: fade-up 0.5s ease-in-out forwards ;
+    
+    
+
+}
+
+::placeholder{
+    color: #1a1a1a;
+    font-size: 20px;
+    font-family: "Electrolize";
+
+}
+.log button{
+    width: 50%;
+    height: 10%;
+    border-radius: 30px;
+    border:none ;
+    background: linear-gradient(45deg,#28266D ,#592C6E );
+    color: aliceblue;
+    font-size: 30px;
+    animation: fade-up 0.5s ease-in-out forwards ;
+    
+    
+
+}
+
+
+.log p{
+    animation: fade-up 0.5s ease-in-out forwards ;
 }
 
 .pic1{
@@ -28,8 +74,30 @@ display: flex;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    animation: fade-right 0.5s ease-in-out ;
     
     
 
 }
 
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px) ;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px)  ;
+    }
+}
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) ;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)  ;
+    }
+}
