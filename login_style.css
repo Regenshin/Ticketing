@@ -13,17 +13,21 @@ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 
 .pic1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.447)),url(./img/checklist.jpg);
-    width: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.318),rgba(0, 0, 0, 0.186)),url(./img/checklist.jpg);
+    width: 50%;
     height:100vh;
     border-radius: 30%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius:0 ;
     z-index: -3;
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
     
     
 
