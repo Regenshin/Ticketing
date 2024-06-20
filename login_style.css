@@ -41,16 +41,19 @@ font-family: "Electrolize";
     width:80% ;
     height: 40px;
     background-color: none;
+    margin-top: 20px;
     
     
     
 
 }
 .credentials{
-width: 90%;   
+width: 90%;  
+height: max-content; 
 display: flex;
 flex-direction: column;
-align-items: center; 
+align-items: center;
+justify-content: space-evenly; 
 }
 
 
