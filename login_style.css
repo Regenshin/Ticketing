@@ -91,6 +91,43 @@ justify-content: space-evenly;
     
 
 }
+ul li {
+    list-style: none;
+    margin: 0;
+    text-align: ;
+}
+.logo{
+    font-size: 100px;
+    
+    
+    font-family: "Irish Grover";
+    color: white;
+    text-shadow: #1a1a1a 1px 2px 3px;
+    position: relative;
+    
+}
+.logo::before{
+    content: '';
+    background-color: #A7ABFF;
+    height: 4px;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 30px;
+    top: 10px;
+}
+.logo::after{
+    content: '';
+    background-color: #EFCFFF;
+    height: 4px;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 30px;
+    bottom: -10px;
+}
 
 @keyframes fade-right{
     0%{
