@@ -62,9 +62,7 @@ input{
 }
 .carcontain {
     width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 600px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +90,9 @@ input{
 
 .cards .card {
     position: relative;
-    height: 100%;
+    
+    max-height: 600px;
+    display: flex;
     background-color: #323444;
     border-radius: 10px;
     padding: 30px 35px;
@@ -113,6 +113,73 @@ input{
     transition: all .7s;
 }
 
+.cards .image .dots{
+    text-align: center;
+
+}
+.dots div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom:10px ;
+
+
+
+}
+.dot div:nth-child(1){
+    background-color: var(--current-color1);
+}
+.dot div:nth-child(1){
+    background-color:#5b85f9 ;
+}
+.dot div:nth-child(1){
+    background-color: #000;
+}
+.card .info{
+    display: block;
+    text-align: end;
+    padding-top:60px ;
+}
+.card .info span{
+    display: block;
+}
+.info .name{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    padding-left: 25%;
+    transition: all .6s ease;
+
+
+
+
+}
+.card .detail{
+    font-size: 16px;
+    color: #eceaed;
+    letter-spacing: 3px;
+}
+
+.card .details{
+    color: #8d9589;
+}
+.card .btn-details{
+    width: 100%;
+    height: 60px;
+    margin: 35px auto;
+    border-radius: 5px;
+    background: blue;
+    color: #eceaed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease;
+}
+.card .btn-details:hover{
+    transform: scale(1.09);
+
+}
 
 .cards .image img:hover {
     transform: scale(1.05);
@@ -123,8 +190,8 @@ input{
 #s3:checked ~ .cards #slide3,
 #s4:checked ~ .cards #slide4,
 #s5:checked ~ .cards #slide5 {
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
     transform: translate3d(0, 0, 0);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
 }
 
 #s1:checked ~ .cards #slide2,
@@ -132,8 +199,8 @@ input{
 #s3:checked ~ .cards #slide4,
 #s4:checked ~ .cards #slide5,
 #s5:checked ~ .cards #slide1 {
+    transform: translate3d(35%, 0, -120px);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.45);
-    transform: translate3d(-35%, 0, -120px);
 }
 
 #s1:checked ~ .cards #slide3,
@@ -141,8 +208,8 @@ input{
 #s3:checked ~ .cards #slide5,
 #s4:checked ~ .cards #slide1,
 #s5:checked ~ .cards #slide2 {
+    transform: translate3d(70%, 0, -220px);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.45);
-    transform: translate3d(-70%, 0, -220px);
 }
 
 #s1:checked ~ .cards #slide4,
@@ -150,8 +217,8 @@ input{
 #s3:checked ~ .cards #slide1,
 #s4:checked ~ .cards #slide2,
 #s5:checked ~ .cards #slide3 {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.45);
-    transform: translate3d(-105%, 0, -320px);
+    transform: translate3d(-70%, 0, -220px);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.45);
 }
 
 #s1:checked ~ .cards #slide5,
@@ -159,6 +226,7 @@ input{
 #s3:checked ~ .cards #slide2,
 #s4:checked ~ .cards #slide3,
 #s5:checked ~ .cards #slide4 {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.45);
-    transform: translate3d(-140%, 0, -420px);
+    transform: translate3d(-35%, 0, -120px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.45);
 }
+
